@@ -36,7 +36,7 @@ public class CarReservation {
      * @return an instance of java.lang.String
      */
     @GET
-    @Produces("application/xml")
+    @Produces("application/json")
     public String getXml() {
         //TODO return proper representation object
         throw new UnsupportedOperationException();
