@@ -13,11 +13,11 @@ import javax.ws.rs.core.Application;
  * @author Ahmad
  */
 @javax.ws.rs.ApplicationPath("webresources")
-public class ApplicationConfig extends Application {
+class ApplicationConfig extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-        Set<Class<?>> resources = new java.util.HashSet<>();
+        Set<Class<?>> resources = new java.util.HashSet();
         addRestResourceClasses(resources);
         return resources;
     }
@@ -30,7 +30,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(reservation.ws.CarReservation.class);
-        resources.add(reservation.ws.FllightReservation.class);
+        resources.add(FlightReservation.class);
         resources.add(reservation.ws.HotelReservation.class);
         resources.add(reservation.ws.SummaryReservation.class);
     }
