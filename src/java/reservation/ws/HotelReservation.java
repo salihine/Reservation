@@ -50,4 +50,8 @@ public class HotelReservation {
     @Consumes("application/xml")
     public void putXml(String content) {
     }
+
+    public void getHotels() {
+
+    }
 }

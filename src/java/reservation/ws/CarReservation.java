@@ -50,4 +50,8 @@ public class CarReservation {
     @Consumes("application/xml")
     public void putXml(String content) {
     }
+
+    public void getCars() {
+
+    }
 }
